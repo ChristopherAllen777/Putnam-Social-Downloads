@@ -1,0 +1,535 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+<style>
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #c80a2c;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 14px;
+  padding: 10px;
+  width: 100%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  display: inline-block;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  font-size: 12px;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+img:hover {
+  opacity: 1;
+}
+#buttons {
+	margin: auto;
+	display: block;
+}
+.col-md-4 {
+    text-align: center;
+}
+.hero {
+    vertical-align: middle;
+    margin: auto;
+    display: block;
+    width: -webkit-fill-available;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+img {
+    vertical-align: middle;
+    width: 100%;
+    margin: auto;
+    display: block;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1.5px solid #4a4949;
+}
+.h2, h2 {
+    font-size: 25px;
+    padding-top: 75px;
+    text-align: center;
+}
+.container {
+    padding: 20px;
+}
+/*#socials {
+  margin: auto;
+  display: block;
+}*/
+img.social {
+    margin: auto;
+    display: block;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*Previous and Next Buttons CSS*/
+#links {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
+
+#links:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.previous {
+    background-color: #f1f1f1;
+    color: black;
+}
+
+.next {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.round {
+    border-radius: 50%;
+}
+#next-buttons {
+  float: right;
+  padding-right: 15px;
+}
+.col-sm-4 {
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.col-sm-12 {
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.col-sm-6 {
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+
+/*Hover Image effects */
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.image-download:hover .image {
+  opacity: 0.3;
+}
+
+.image-download:hover .middle {
+  opacity: 1;
+}
+
+.text {
+    background-color: red;
+    color: white;
+    font-size: 14px;
+    font-family: Roboto;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+<div id="top">
+<div class="row">
+<img class="hero" src="https://lh3.googleusercontent.com/4M2nf94TJ0UdqjdxT4BKfWjiwpTT1pYcwEUBV0v6TFHO5Dd_itpH_GjdvuYwbZueNKU7pdsVJmUMkqexG9W6Ow=w1024">
+</div>
+
+<br>
+<div id="buttons" class="row">
+
+
+
+<div class="col-sm-12 col-md-4">
+<a href="#section-1">
+<button class="button" style="vertical-align:middle"><span>FACEBOOK & TWITTER PROFILE PHOTO </span></button></a>
+</div>
+
+<div class="col-sm-12 col-md-4">
+<a href="#section-2">
+<button class="button" style="vertical-align:middle"><span>FACEBOOK COVER PHOTO </span></button></a>
+</div>
+
+<div class="col-sm-12 col-md-4">
+<a href="#section-3">
+<button class="button" style="vertical-align:middle"><span>TWITTER COVER PHOTO </span></button></a>
+</div>
+</div>
+
+
+
+
+<div id="section-1">
+
+
+<div class="row">
+<div class="col-12">
+<h2>PROFILE PHOTOS</h2>
+<div id="next-buttons">
+<ul class="pager">
+  <li><a id="links" href="#top">Previous</a></li>
+  <li><a id="links" href="#section-2">Next</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div class="row">
+  <div class="col-sm-4">
+  <div class="image-download">
+    <a class="tooltip-text" data-toggle="tooltip" title="Facebook Profile pic" href="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0005_Conservative.png" download>
+    <img class="image" src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0005_Conservative.png"> 
+    <div class="middle">
+    <div class="text"> Click To Download!</div>
+    </div></a></div>
+  </div>
+
+
+    <div class="col-sm-4">
+    <a href="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0005_Stand.png" download>
+    <img src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0000_Stand.png"></a>
+  </div>
+
+    <div class="col-sm-4">
+    <img src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0001_Farmer.png">
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-4">
+    <img src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0004_Hunstman.png">
+  </div>
+
+    <div class="col-sm-4">
+    <img src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0002_Veteran.png">
+  </div>
+
+    <div class="col-sm-4">
+    <img src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0003_Fisherman.png">
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-4">
+    <img src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0007_Gator.png">
+  </div>
+
+    <div class="col-sm-4">
+    <img src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0006_Student.png">
+  </div>
+
+    <div class="col-sm-4">
+    <img src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0009_Nole-1.png">
+  </div>
+</div>
+
+<!-- End of FB square Photos -->
+
+<br>
+
+<div class="row">
+  <div class="col-sm-6">
+    <img src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0008_Knight.png">
+  </div>
+
+    <div class="col-sm-6">
+    <img src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0010_Bulls.png">
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-6">
+    <img src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0011_Panthers.png">
+  </div>
+
+    <div class="col-sm-6">
+    <img src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0012_Owls.png">
+  </div>
+</div>
+
+</div>
+
+
+<div id="section-2">
+
+<div class="row">
+<div class="col-12">
+<h2>FACEBOOK COVER PHOTOS</h2>
+<div id="next-buttons">
+<ul class="pager">
+  <li><a id="links" href="#section-1">Previous</a></li>
+  <li><a id="links" href="#section-3">Next</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div class="row">
+  <div class="col-sm-12">
+    <img src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0000_Stand-1.png">
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-6">
+    <img src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0004_Hunstman-1.png">
+  </div>
+    <div class="col-sm-6">
+    <img src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0003_Fisherman-1.png">
+  </div>
+</div>
+
+
+
+<div class="row">
+  <div class="col-sm-12">
+    <img src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0005_Conservative-1.png">
+  </div>
+</div>
+
+
+
+<div class="row">
+  <div class="col-sm-6">
+    <img src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0001_Farmer-2.png">
+  </div>
+    <div class="col-sm-6">
+    <img src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0002_Veteran-2.png">
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-12">
+    <img src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0006_Student-1.png">
+  </div>
+</div>
+
+<!-- Bottom  -->
+
+<div class="row">
+  <div class="col-sm-6">
+    <img src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0010_Bulls-1.png">
+  </div>
+    <div class="col-sm-6">
+    <img src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0007_Gator-1.png">
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-6">
+    <img src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0008_Knight-1.png">
+  </div>
+    <div class="col-sm-6">
+    <img src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0009_Nole-2.png">
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-6">
+    <img src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0011_Panthers-1.png">
+  </div>
+    <div class="col-sm-6">
+    <img src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0012_Owls-1.png">
+  </div>
+</div>
+</div>
+
+<div id="section-3">
+
+
+<div class="row">
+<div class="col-12">
+<h2>TWITTER COVER PHOTOS</h2>
+<div id="next-buttons">
+<ul class="pager">
+  <li><a id="links" href="#section-2">Previous</a></li>
+  <li><a id="links" href="#socials">Next</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div class="row">
+  <div class="col-sm-12">
+    <img src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0000_Stand-2.png">
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-6">
+    <img src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0004_Hunstman-2.png">
+  </div>
+    <div class="col-sm-6">
+    <img src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0003_Fisherman-2.png">
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-sm-12">
+    <img src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0005_Conservative-2.png">
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-6">
+    <img src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0001_Farmer-2.png">
+  </div>
+    <div class="col-sm-6">
+    <img src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0002_Veteran-2.png">
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-sm-12">
+    <img src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0006_Student-2.png">
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-sm-6">
+    <img src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0010_Bulls-2.png">
+  </div>
+    <div class="col-sm-6">
+    <img src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0007_Gator-2.png">
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-6">
+    <img src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0008_Knight-2.png">
+  </div>
+    <div class="col-sm-6">
+    <img src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0009_Nole-3.png">
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-6">
+    <img src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0011_Panthers-2.png">
+  </div>
+    <div class="col-sm-6">
+    <img src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0012_Owls-2.png">
+  </div>
+</div>
+</div>
+
+<h4 style="text-align: center;"> MAKE SURE TO KEEP UP WITH ADAM VIA FACEBOOK & TWITTER! </h4>
+
+  <div id="socials" class="col-sm-12">
+  <ul class="pager">
+  <li><a href="https://www.facebook.com/adamputnam/" target="blank"><img style="width: 50px; height: 50px;" src="https://facebookbrand.com/wp-content/themes/fb-branding/prj-fb-branding/assets/images/fb-art.png" class="social" alt="Facebook"></a></li>
+  <li><a href="https://twitter.com/adamputnam" target="blank"><img style="width: 50px; height: 50px;" src="http://hs.umt.edu/anthropology/images/twitter-bird-white-on-blue.png" class="social" alt="Twitter"></a></li>
+  </ul>
+<!--       <a href="https://www.facebook.com/adamputnam/" target="blank"><img style="width: 50px; height: 50px;" src="https://facebookbrand.com/wp-content/themes/fb-branding/prj-fb-branding/assets/images/fb-art.png" class="social" alt="Facebook"></a>
+
+      <a href="https://twitter.com/adamputnam" target="blank"><img style="width: 50px; height: 50px;" src="http://hs.umt.edu/anthropology/images/twitter-bird-white-on-blue.png" class="social" alt="Twitter"></a> -->
+  </div>
+<div class="col-12">
+<a href="#top">
+<button class="button" style="vertical-align:middle"><span> Back to the top! </span></button></a>
+</div>
+</div>
+</div>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+});
+</script>
+
+</body>
+</html>
