@@ -1,0 +1,22 @@
+{
+  "name": "putnam-social-downloads",
+  "version": "1.0.0",
+  "description": "Putnam Socials",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChristopherAllen777/Putnam-Social-Downloads.git"
+  },
+  "keywords": [
+    "Socials"
+  ],
+  "author": "Chris Allen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChristopherAllen777/Putnam-Social-Downloads/issues"
+  },
+  "homepage": "https://github.com/ChristopherAllen777/Putnam-Social-Downloads#readme"
+}
