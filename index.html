@@ -4,19 +4,17 @@
 <head>
   <meta charset="utf-8">
   <title> Adam Putnam | Social Downloads</title>
+  <!-- View port scaling for mobile use -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!--   Bootstrap CDN -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <!-- jQuery Link -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <!-- Bootstrap js  -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
-
-<!--   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
 
 <style>
+
+/*Body app styling*/
+
 .button {
   display: inline-block;
   border-radius: 4px;
@@ -32,7 +30,6 @@
   margin: 5px;
   display: inline-block;
 }
-
 .button span {
   cursor: pointer;
   display: inline-block;
@@ -40,7 +37,6 @@
   transition: 0.5s;
   font-size: 12px;
 }
-
 .button span:after {
   content: '\00bb';
   position: absolute;
@@ -49,7 +45,6 @@
   right: -20px;
   transition: 0.5s;
 }
-
 .button:hover span {
   padding-right: 25px;
 }
@@ -97,10 +92,6 @@ hr {
 .container {
     padding: 20px;
 }
-/*#socials {
-  margin: auto;
-  display: block;
-}*/
 img.social {
     margin: auto;
     display: block;
@@ -109,28 +100,23 @@ img.social {
 
 /*Previous and Next Buttons CSS*/
 
-
 #links {
     text-decoration: none;
     display: inline-block;
     padding: 8px 16px;
 }
-
 #links:hover {
     background-color: #ddd;
     color: black;
 }
-
 .previous {
     background-color: #f1f1f1;
     color: black;
 }
-
 .next {
     background-color: #4CAF50;
     color: white;
 }
-
 .round {
     border-radius: 50%;
 }
@@ -151,7 +137,7 @@ img.social {
     margin-top: 15px;
 }
 
-/*Hover Image effects */
+/* Hover White Image Opacity effects */
 
 .image {
   opacity: 1;
@@ -161,7 +147,6 @@ img.social {
   transition: .5s ease;
   backface-visibility: hidden;
 }
-
 .middle {
   transition: .5s ease;
   opacity: 0;
@@ -171,7 +156,6 @@ img.social {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%)
 }
-
 .image-download:hover .image {
   opacity: 0.3;
 }
@@ -179,7 +163,6 @@ img.social {
 .image-download:hover .middle {
   opacity: 1;
 }
-
 .text {
     background-color: red;
     color: white;
@@ -192,12 +175,9 @@ img.social {
 /*Darken Hover over CSS*/
 
 .pic {
-/*   width: 373px;
-  height: 300px; */
   position: relative;
   display: inline-block;
 }
-
 .pic:hover > .overlay {
     position: absolute;
     top: 0;
@@ -209,7 +189,6 @@ img.social {
     z-index: 100;
     display: block;
 }
-
 </style>
 </head>
 <body>
@@ -217,7 +196,7 @@ img.social {
 <div class="container">
 <div id="top">
 <div class="row">
-<img class="hero" src="https://lh3.googleusercontent.com/4M2nf94TJ0UdqjdxT4BKfWjiwpTT1pYcwEUBV0v6TFHO5Dd_itpH_GjdvuYwbZueNKU7pdsVJmUMkqexG9W6Ow=w1024">
+  <img class="hero" src="https://lh3.googleusercontent.com/4M2nf94TJ0UdqjdxT4BKfWjiwpTT1pYcwEUBV0v6TFHO5Dd_itpH_GjdvuYwbZueNKU7pdsVJmUMkqexG9W6Ow=w1024">
 </div>
 
 <br>
@@ -285,15 +264,6 @@ img.social {
         </div></a></div>
   </div>
 </div>
-
-<!--     <div class="col-sm-4">
-      <div class="image-download">
-        <a href="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0001_Farmer.png" download>
-        <img class="image" src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0001_Farmer.png">
-        </a>
-      </div>
-    </div>
-</div> -->
 
 <div class="row">
     <div class="col-sm-4">
@@ -710,7 +680,7 @@ img.social {
     <div id="socials" class="col-sm-12">
       <ul class="pager">
         <li><a href="https://www.facebook.com/adamputnam/" target="blank"><img style="width: 50px; height: 50px;" src="https://facebookbrand.com/wp-content/themes/fb-branding/prj-fb-branding/assets/images/fb-art.png" class="social" alt="Facebook"></a></li>
-        <li><a href="https://twitter.com/adamputnam" target="blank"><img style="width: 50px; height: 50px;" src="http://hs.umt.edu/anthropology/images/twitter-bird-white-on-blue.png" class="social" alt="Twitter"></a></li>
+        <li><a href="https://twitter.com/adamputnam" target="blank"><img style="width: 50px; height: 50px;" src="https://hs.umt.edu/anthropology/images/twitter-bird-white-on-blue.png" class="social" alt="Twitter"></a></li>
       </ul>
     </div>
 
@@ -750,9 +720,12 @@ $(document).ready(function(){
 </script>
 
 <script>
-$(document).ready(function(){
-    $('[data-toggle="tooltip"]').tooltip();   
-});
+// Tool tip effect with Javascript
+
+// $(document).ready(function(){
+//     $('[data-toggle="tooltip"]').tooltip();   
+// });
+console.log("Built by Chris Allen @ Harris Media LLC.");
 </script>
 
 </body>
