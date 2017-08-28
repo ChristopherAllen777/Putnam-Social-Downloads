@@ -5,13 +5,16 @@
   <meta charset="utf-8">
   <title> Adam Putnam | Social Downloads</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--   Bootstrap CDN -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- jQuery Link -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Bootstrap js  -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!--   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
 
 <style>
 .button {
@@ -185,6 +188,28 @@ img.social {
     padding: 10px;
     border-radius: 10px;
 }
+
+/*Darken Hover over CSS*/
+
+.pic {
+/*   width: 373px;
+  height: 300px; */
+  position: relative;
+  display: inline-block;
+}
+
+.pic:hover > .overlay {
+    position: absolute;
+    top: 0;
+    width:100%;
+    height:100%;
+    left: 0;
+    background-color:#000;
+    opacity:0.2;
+    z-index: 100;
+    display: block;
+}
+
 </style>
 </head>
 <body>
@@ -235,7 +260,10 @@ img.social {
   <div class="col-sm-4">
     <div class="image-download">
       <a href="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0005_Conservative.png" download>
-      <img class="image" src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0005_Conservative.png"> 
+        <div class="pic">
+          <img src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0005_Conservative.png"> 
+        <div class="overlay"></div>
+        </div>
       </a>
     </div>
   </div>
@@ -248,14 +276,24 @@ img.social {
     </div>
   </div>
 
-    <div class="col-sm-4">
+  <div class="col-sm-4">
       <div class="image-download">
         <a href="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0001_Farmer.png" download>
-        <img src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0001_Farmer.png">
+        <img class="image" src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0001_Farmer.png">
+        <div class="middle">
+        <div class="text"> Click To Download!</div>
+        </div></a></div>
+  </div>
+</div>
+
+<!--     <div class="col-sm-4">
+      <div class="image-download">
+        <a href="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0001_Farmer.png" download>
+        <img class="image" src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0001_Farmer.png">
         </a>
       </div>
     </div>
-</div>
+</div> -->
 
 <div class="row">
     <div class="col-sm-4">
