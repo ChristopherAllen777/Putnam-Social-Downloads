@@ -93,16 +93,26 @@ hr {
     padding-left: 50px;
     padding-right: 50px;
 }
-@media (max-width: 767px) {
-  .container {
-    padding: 50px;
-  }
-}
 img.social {
     margin: auto;
     display: block;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+@media (max-width: 767px) {
+  #cover {
+    width: 100%
+  }
+    img {
+    width: 70%;
+  }
+      img.image {
+    width: 70%;
+  }
+    .container {
+    padding: 50px;
+  }
+}
+
 
 /*Previous and Next Buttons CSS*/
 
@@ -194,6 +204,24 @@ img.social {
     opacity:0.2;
     z-index: 100;
     display: block;
+}
+@media (max-width: 767px) {
+  .pic {
+  position: relative;
+  display: block;
+
+}
+.pic:hover > .overlay {
+    position: absolute;
+    top: 0;
+    width:100%;
+    height:100%;
+    left: 0;
+    background-color:#000;
+    opacity:0.2;
+    z-index: 100;
+    display: block;
+}
 }
 </style>
 </head>
@@ -391,7 +419,7 @@ img.social {
     <div class="col-sm-12">
       <div class="image-download">
         <a href="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0000_Stand-1.png" download>
-        <img src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0000_Stand-1.png">
+        <img id="cover" src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0000_Stand-1.png">
         </a>
       </div>
     </div>
@@ -403,7 +431,7 @@ img.social {
     <div class="col-sm-6">
       <div class="image-download">
         <a href="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0004_Hunstman-1.png" download>
-        <img src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0004_Hunstman-1.png">
+        <img id="cover" src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0004_Hunstman-1.png">
         </a>
       </div>
     </div>
@@ -411,7 +439,7 @@ img.social {
     <div class="col-sm-6">
       <div class="image-download">
         <a href="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0003_Fisherman-1.png" download>
-        <img src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0003_Fisherman-1.png">
+        <img id="cover" src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0003_Fisherman-1.png">
         </a>
       </div>
     </div>
@@ -423,7 +451,7 @@ img.social {
     <div class="col-sm-12">
       <div class="image-download">
         <a href="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0005_Conservative-1.png" download>
-        <img src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0005_Conservative-1.png">
+        <img id="cover" src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0005_Conservative-1.png">
         </a>
       </div>
     </div>
@@ -435,7 +463,7 @@ img.social {
     <div class="col-sm-6">
       <div class="image-download">
         <a href="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0001_Farmer-2.png" download>
-        <img src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0001_Farmer-2.png">
+        <img id="cover" src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0001_Farmer-2.png">
         </a>
       </div>
     </div>
@@ -443,7 +471,7 @@ img.social {
     <div class="col-sm-6">
       <div class="image-download">
         <a href="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0002_Veteran-2.png" download>
-        <img src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0002_Veteran-2.png">
+        <img id="cover" src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0002_Veteran-2.png">
         </a>
       </div>
     </div>
@@ -455,7 +483,7 @@ img.social {
     <div class="col-sm-12">
       <div class="image-download">
         <a href="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0006_Student-1.png" download>
-        <img src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0006_Student-1.png">
+        <img id="cover" src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0006_Student-1.png">
         </a>
       </div>
     </div>
@@ -469,7 +497,7 @@ img.social {
     <div class="col-sm-6">
       <div class="image-download">
         <a href="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0010_Bulls-1.png" download>
-        <img src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0010_Bulls-1.png">
+        <img id="cover" src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0010_Bulls-1.png">
         </a>
       </div>
     </div>
@@ -477,7 +505,7 @@ img.social {
     <div class="col-sm-6">
       <div class="image-download">
         <a href="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0007_Gator-1.png" download>
-        <img src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0007_Gator-1.png">
+        <img id="cover" src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0007_Gator-1.png">
         </a>
       </div>
     </div>
@@ -489,7 +517,7 @@ img.social {
     <div class="col-sm-6">
       <div class="image-download">
         <a href="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0008_Knight-1.png" download>
-        <img src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0008_Knight-1.png">
+        <img id="cover" src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0008_Knight-1.png">
         </a>
       </div>
     </div>
@@ -497,7 +525,7 @@ img.social {
     <div class="col-sm-6">
       <div class="image-download">
         <a href="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0009_Nole-2.png" download>
-        <img src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0009_Nole-2.png">
+        <img id="cover" src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0009_Nole-2.png">
         </a>
       </div>
     </div>
@@ -509,7 +537,7 @@ img.social {
     <div class="col-sm-6">
       <div class="image-download">
         <a href="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0011_Panthers-1.png" download>
-        <img src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0011_Panthers-1.png">
+        <img id="cover" src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0011_Panthers-1.png">
         </a>
       </div>
     </div>
@@ -517,7 +545,7 @@ img.social {
     <div class="col-sm-6">
       <div class="image-download">
         <a href="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0012_Owls-1.png" download>
-        <img src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0012_Owls-1.png">
+        <img id="cover" src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0012_Owls-1.png">
         </a>
       </div>
     </div>
@@ -548,7 +576,7 @@ img.social {
     <div class="col-sm-12">
       <div class="image-download">
         <a href="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0000_Stand-2.png" download>
-        <img src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0000_Stand-2.png">
+        <img id="cover" src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0000_Stand-2.png">
         </a>
       </div>
     </div>
@@ -559,7 +587,7 @@ img.social {
     <div class="col-sm-6">
       <div class="image-download">
         <a href="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0004_Hunstman-2.png" download>
-        <img src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0004_Hunstman-2.png">
+        <img id="cover" src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0004_Hunstman-2.png">
         </a>
       </div>
     </div>
@@ -567,7 +595,7 @@ img.social {
     <div class="col-sm-6">
       <div class="image-download">
         <a href="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0003_Fisherman-2.png" download>
-        <img src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0003_Fisherman-2.png">
+        <img id="cover" src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0003_Fisherman-2.png">
         </a>
       </div>
     </div>
@@ -579,7 +607,7 @@ img.social {
     <div class="col-sm-12">
       <div class="image-download">
         <a href="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0005_Conservative-2.png" download>
-        <img src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0005_Conservative-2.png">
+        <img id="cover" src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0005_Conservative-2.png">
         </a>
       </div>
     </div>
@@ -591,7 +619,7 @@ img.social {
     <div class="col-sm-6">
       <div class="image-download">
         <a href="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0001_Farmer-2.png" download>
-        <img src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0001_Farmer-2.png">
+        <img id="cover" src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0001_Farmer-2.png">
         </a>
       </div>
     </div>
@@ -599,7 +627,7 @@ img.social {
     <div class="col-sm-6">
       <div class="image-download">
         <a href="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0002_Veteran-2.png" download>
-        <img src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0002_Veteran-2.png">
+        <img id="cover" src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0002_Veteran-2.png">
         </a>
       </div>
     </div>
@@ -612,7 +640,7 @@ img.social {
     <div class="col-sm-12">
       <div class="image-download">
         <a href="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0006_Student-2.png" download>
-        <img src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0006_Student-2.png">
+        <img id="cover" src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0006_Student-2.png">
         </a>
       </div>
     </div>
@@ -625,7 +653,7 @@ img.social {
     <div class="col-sm-6">
       <div class="image-download">
         <a href="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0010_Bulls-2.png" download>
-        <img src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0010_Bulls-2.png">
+        <img id="cover" src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0010_Bulls-2.png">
         </a>
       </div>
     </div>
@@ -633,7 +661,7 @@ img.social {
     <div class="col-sm-6">
       <div class="image-download">
         <a href="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0007_Gator-2.png" download>
-        <img src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0007_Gator-2.png">
+        <img id="cover" src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0007_Gator-2.png">
         </a>
       </div>
     </div>
@@ -645,7 +673,7 @@ img.social {
     <div class="col-sm-6">
       <div class="image-download">
         <a href="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0008_Knight-2.png" download>
-        <img src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0008_Knight-2.png">
+        <img id="cover" src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0008_Knight-2.png">
         </a>
       </div>
     </div>
@@ -653,7 +681,7 @@ img.social {
     <div class="col-sm-6">
       <div class="image-download">
         <a href="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0009_Nole-3.png" download>
-        <img src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0009_Nole-3.png">
+        <img id="cover" src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0009_Nole-3.png">
         </a>
       </div>
     </div>
@@ -665,7 +693,7 @@ img.social {
     <div class="col-sm-6">
       <div class="image-download">
         <a href="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0011_Panthers-2.png" download>
-        <img src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0011_Panthers-2.png">
+        <img id="cover" src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0011_Panthers-2.png">
         </a>
       </div>
     </div>
@@ -673,7 +701,7 @@ img.social {
     <div class="col-sm-6">
       <div class="image-download">
         <a href="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0012_Owls-2.png" download>
-        <img src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0012_Owls-2.png">
+        <img id="cover" src="https://adamputnam.com/wp-content/uploads/2017/08/Putnam_stand_0012_Owls-2.png">
         </a>
       </div>
     </div>
@@ -687,6 +715,20 @@ img.social {
       <ul class="pager">
         <li><a href="https://www.facebook.com/adamputnam/" target="blank"><img style="width: 50px; height: 50px;" src="https://facebookbrand.com/wp-content/themes/fb-branding/prj-fb-branding/assets/images/fb-art.png" class="social" alt="Facebook"></a></li>
         <li><a href="https://twitter.com/adamputnam" target="blank"><img style="width: 50px; height: 50px;" src="https://hs.umt.edu/anthropology/images/twitter-bird-white-on-blue.png" class="social" alt="Twitter"></a></li>
+      </ul>
+    </div>
+
+
+    <div id="folow-socials" class="col-sm-12">
+      <ul class="pager">
+        <li><iframe src="https://www.facebook.com/plugins/follow.php?href=https%3A%2F%2Fwww.facebook.com%2Fadamputnam%2F&width=78&height=65&layout=button&size=large&show_faces=true&appId=135546340311100" width="78" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe></li>
+        <li><iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&layout=button&size=large&mobile_iframe=true&appId=135546340311100&width=73&height=28" width="73" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe></li>
+        <li><iframe
+            src="https://platform.twitter.com/widgets/tweet_button.html?size=l&url=https%3A%2F%2Fchristopherallen777.github.io%2FPutnam-Social-Downloads&via=adamputnam&related=twitterapi%2Ctwitter&text=Share%20Adam%20Putnam%20Twitter%20Cover%20Photos!&hashtags=FloridaFirst%2CAdamPutnam" 
+            width="85"
+            height="28"
+            title="Twitter Tweet Button"
+            style="border: 0; overflow: hidden;"></iframe></li>
       </ul>
     </div>
 
